@@ -1,2 +1,3 @@
-# postdegree-pucrs
-This is my postdegree repository. Here I store my codes created during the course.
+# Fullstack Development Postdegree - PUCRS
+
+I am now using this repository only to have access of my codes in my PC and in my laptop.
