@@ -1,4 +1,4 @@
-// funções, comandos de repetição, de seleção e operações aritméticas
+// O objetivo desse código foi aplicar os conceitos de funções, comandos de repetição, de seleção e operações aritméticas aprendidos durante a aula
 
 function avaliaParidade(limiteSuperior) {
     for (let i = 0; i < limiteSuperior; i++) {

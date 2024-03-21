@@ -1,3 +1,5 @@
+// O objetivo desse código foi aplicar o conceito de funções recursivas, aquelas que chamam a si mesmas até que o problema esteja resolvido
+
 function fatorial(number) {
   if (number < 0) {
     return undefined;

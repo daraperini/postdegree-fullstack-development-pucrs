@@ -1,4 +1,5 @@
-// set e seu funcionamento
+// Código desenvolvido com o objetivo de explorar Sets no JavaScript.
+// Utilização do Set de forma a demonstrar que esta estrutura de dados não aceita valores repetidos
 
 var mySet = new Set();
 

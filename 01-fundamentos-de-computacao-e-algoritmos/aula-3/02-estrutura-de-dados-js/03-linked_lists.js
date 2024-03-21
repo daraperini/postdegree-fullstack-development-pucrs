@@ -1,4 +1,6 @@
-// Listas encadeadas
+// Código com exemplo de criação e aplicação de listas encadeadas
+// Listas encadeadas são compostas por nodos que possuem referência para o próximo nodo da lista
+// Cada elemento de uma lista encadeada se encontra em diferentes partes da memória, e as referências permitem que esses elementos se encadeiem
 
 class Node {
     constructor(element) {

@@ -1,0 +1,80 @@
+  <!-- 
+    Esse código teve como objetivo principal a demonstração da linguagem JavaScript e alguns de seus componentes básicos, como variáveis.
+    Nesse contexto, não nos preocupamos na estrutura base necessária para o desenvolvimento do HTML.
+  -->
+
+
+ <!-- Objetivo: reproduzir uma calculadora que calcule o custo de uma viagem de carro de aplicativo baseado na distância e no tempo de viagem -->
+<input placeholder="Distancia em km" id="campoDistanciaEmKM" />
+<input placeholder="Tempo em minutos" id="campoTempoEmMin" />
+<button onclick="calculaCorrida()">Calcular</button>
+
+<script>
+  function formataMoeda(valor) {
+    var valorFormatado = valor.toFixed(2).replace(".", ",");
+    return valorFormatado;
+  }
+
+  function calculaCorrida() {
+    // [PROCESSAMENTO]
+    // valida na entrada / Fail Fast Validations
+    var isCampoDistanciaVazio = campoDistanciaEmKM.value == "";
+    var isCampoTempoVazio = campoTempoEmMin.value == "";
+
+    if (isCampoDistanciaVazio || isCampoTempoVazio) {
+      alert("Preencha os campos para realizar o cálculo");
+      return;
+    }
+
+    // organizar as entradas e aplicar a regra de negócio
+    var tarifaDinamica = 1.4;
+    var distanciaEmKm = campoDistanciaEmKM.value * tarifaDinamica;
+    var tempoEmMin = campoTempoEmMin.value * 0.26;
+    var valorDaCorrida = distanciaEmKm + tempoEmMin;
+
+    // [OUTPUT]
+    alert("O valor da corrida é " + formataMoeda(valorDaCorrida));
+  }
+
+</script>
+
+
+<!-- Código reescrito seguindo o padrão de construção de uma página HTML -->
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Uber</title>
+  </head>
+  <body>
+    <input placeholder="Distancia em km" id="campoDistanciaEmKM" />
+    <input placeholder="Tempo em minutos" id="campoTempoEmMin" />
+    <button onclick="calculaCorrida()">Calcular</button>
+
+    <script>
+      function formataMoeda(valor) {
+        var valorFormatado = valor.toFixed(2).replace(".", ",");
+        return valorFormatado;
+      }
+
+      function calculaCorrida() {
+        var isCampoDistanciaVazio = campoDistanciaEmKM.value == "";
+        var isCampoTempoVazio = campoTempoEmMin.value == "";
+
+        if (isCampoDistanciaVazio || isCampoTempoVazio) {
+          alert("Preencha os campos para realizar o cálculo");
+          return;
+        }
+
+        var tarifaDinamica = 1.4;
+        var distanciaEmKm = campoDistanciaEmKM.value * tarifaDinamica;
+        var tempoEmMin = campoTempoEmMin.value * 0.26;
+        var valorDaCorrida = distanciaEmKm + tempoEmMin;
+
+        alert("O valor da corrida é " + formataMoeda(valorDaCorrida));
+      }
+    </script>
+  </body>
+</html> -->

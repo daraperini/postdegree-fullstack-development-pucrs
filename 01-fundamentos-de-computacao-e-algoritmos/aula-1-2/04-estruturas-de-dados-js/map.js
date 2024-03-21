@@ -1,4 +1,6 @@
-// TDD - Test Driven Development
+// Código desenvolvido com o objetivo de explorar Maps no JavaScript.
+// Utilização do Map de forma a demonstrar que esta estrutura de dados identifica dados de acordo com um par chave-valor
+// Demonstração de sobreposição de valor quando evocada mesma chave em dois ou mais momentos diferentes.
 
 var novoMapa = new Map();
 
