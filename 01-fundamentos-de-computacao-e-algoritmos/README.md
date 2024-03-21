@@ -33,7 +33,7 @@ Foi explorada a base da comunicação cliente-servidor, performance de websites 
 Nesse repositório você encontra os códigos básicos desenvolvidos em aula utilizando a linguagem JavaScript, além de uma breve introdução a HTML e CSS.
 
 
-## Tecnologias utilizadas
+## Tecnologias utilizadas:
 
 * JavaScript
 * HTML
