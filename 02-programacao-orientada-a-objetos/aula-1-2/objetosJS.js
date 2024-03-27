@@ -2,6 +2,7 @@ const objetoVazio = {};
 
 // Até um objeto vazio é um objeto:
 console.log(objetoVazio);
+console.log('-------------')
 
 const composicaoObjeto = {
   nomeMembro1: "valorMembro1",
@@ -10,6 +11,7 @@ const composicaoObjeto = {
 
 // Objetos são compostos por membros, que por sua vez são compostos por nome e valor:
 console.log(composicaoObjeto);
+console.log('-------------')
 
 const pessoa1 = {
   nome: "Dara",
@@ -21,12 +23,15 @@ const pessoa1 = {
 
 // Um objeto fica salvo dentro de uma variável, e pode ter quantos membros for necessário:
 console.log(pessoa1);
+console.log('-------------')
 
 // Podemos acessar os atributos de objetos
 console.log(pessoa1.idade);
+console.log('-------------')
 
 // Métodos são membros dos objetos
 console.log(pessoa1.saudar());
+console.log('-------------')
 
 // Objetos podem armazenar referências
 

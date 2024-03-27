@@ -14,7 +14,7 @@ class Usuario {
       console.log("Fazendo login");
     }
     trocarEmail(novoEmail) {
-      console.log("Novo email é" + novoEmail);
+      console.log("Novo email é " + novoEmail);
     }
     trocarSenha(novaSenha) {
       console.log("Nova senha é " + novaSenha);
@@ -51,13 +51,17 @@ class Usuario {
   
   // Acessar novo componente
   console.log(administrador);
+  console.log('-------------')
   
   // Componente criado a partir de classe filha tem acesso a métodos da classe pai
   console.log(administrador.trocarEmail('novoemail@gmail.com'));
+  console.log('-------------')
   
   // Mas também tem novos métodos
   console.log(administrador.bloquear());
+  console.log('-------------')
   
   // E pode sobrescrever métodos da classe pai
   console.log(administrador.login());
+  console.log('-------------')
   
