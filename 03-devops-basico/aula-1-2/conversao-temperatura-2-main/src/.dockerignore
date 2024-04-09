@@ -1,0 +1,2 @@
+# Quando damos o comando "COPY . ." no Dockerfile ele não deve copiar a pasta node_modules porque as dependências já foram instaladas e não devem ser copiadas toda vez que buildar o app
+node_modules
