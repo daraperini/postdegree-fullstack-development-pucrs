@@ -198,3 +198,9 @@ A partir disso temos uma nova imagem que, nesse caso, possui o curl instalado e 
       - value: valor do secret
 
  -->
+
+ ### Rodar pipeline a partir de alteração local do código
+
+ - Criar imagem usando `docker container run -d -p portaQueSeraExecutadoLocalmente:portaDoContainer nomeDaImagem`
+ - Realizar alguma alteração no código e pushar pro github;
+ - Pipeline roda no github a partir do trigger do push;

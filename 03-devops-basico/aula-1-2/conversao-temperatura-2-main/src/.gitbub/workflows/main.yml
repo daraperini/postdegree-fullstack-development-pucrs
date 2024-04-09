@@ -1,3 +1,5 @@
+# Workflow não foi desenvolvido diretamente no GitHub para não interferir no restante do repositório. Assim, criei o arquivo manualmente no VSCode e arquivei da maneira mostrada na aula para ter o exemplo salvo de como desenvolve-lo.
+
 name: CI
 
 on:
