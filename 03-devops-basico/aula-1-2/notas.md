@@ -108,3 +108,93 @@ A partir disso temos uma nova imagem que, nesse caso, possui o curl instalado e 
   - Boa prática: subir com tag `latest` para indicar a última versão:
     - `docker tag nomeDaImagemComPrimeiraTag nomeDaImagemComTagAdicionada` para adicionar tag a uma imagem
     - Pushar novamente a imagem utilizando a nova tag: ele não vai fazer upload novamente, só vai enviar a tag nova para identificação da latest
+
+
+## Pipeline CI
+
+- Para criar usando Github Actions:
+  - github
+  - acessa repositório
+  - actions
+  - seleciona alguma das recomendadas ou cria a sua própria
+
+  - a pipeline CI deve conter:
+    - `name: CI`
+    - `on:` especificar triggers (ex.: `push: branches:[branch]`, `pull_request: branches:[branch]`)
+    - `jobs:` possuem `steps` que são executados sequencialmente, assim como os jobs são executados sequencialmente
+      - dentro do jobs especificar o runner declarando `runs-on: runner`
+
+
+### Workflow para o projeto `conversao-temperatura-2-main`:
+
+<!-- nomeando o workflow -->
+  name: CI
+
+<!-- definindo quando o workflow deve ser ativado -->
+  on:
+    push:
+      branches: [main]
+
+<!-- definindo as etapas do workflow -->
+  jobs: 
+    CI:
+  <!-- definindo onde o workflow vai rodar -->
+      runs-on: ubuntu-latest
+
+  <!-- definindo os passos do workflow -->
+      steps:
+      - uses: actions/checkout@v4
+
+  <!-- garantindo a instalação do Nodejs no runner para poder compilar a aplicação (projeto foi desenvolvido em Nodejs versão 16.15.1) -->
+      - name: Setup do Node.js
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 16.15.1
+
+  <!-- instalando a ferramenta de testes e os pacotes para poder rodar os testes -->
+      - name: Instalação do Mocha e dos pacotes para teste
+        run: |
+          cd src;
+          npm install -g mocha;
+          npm install
+          
+  <!-- executando os testes -->
+      - name: Execução do teste
+        run: mocha src/test/convert.js
+
+
+  <!-- fazendo login com o Docker Hub para ter permissão de acesso a imagem utilizando secrets para não expor username e password-->
+      - name: Autenticação no Docker Hub
+        uses: docker/login-action@v3.1.0
+        with:
+          username: ${{secrets.DOCKERHUB_USERNAME}}
+          password: ${{secrets.DOCKERHUB_PASSWORD}}
+
+  <!-- construindo e pushando a imagem docker. github.run_number pega o número da execução da pipeline e utiliza como tag -->
+      - name: Construção da imagem Docker
+        uses: docker/build-push-action@v5.3.0
+        with:
+          context: ./src
+          file: ./src/Dockerfile
+          push: true
+          tags: |
+            fabricioveronez/aula-conversao-temperatura:${{github.run_number}}
+            fabricioveronez/aula-conversao-temperatura:latest
+
+
+
+<!-- Indentação deve estar correta pro código funcionar devido a extensão .yml do doc! -->
+
+
+
+<!-- ADICIONAR SECRETS EM UM PROJETO:
+
+  No GitHub:
+    - Settings
+    - Secrets
+    - Actions
+    - New repository secret
+      - Name: dar um nome ao secret ex.: DOCKERHUB_USERNAME
+      - value: valor do secret
+
+ -->
