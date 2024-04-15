@@ -96,6 +96,43 @@ https://learngitbranching.js.org
       - `git tag nomeDaTag hashDoCommit`: cria tag
       - `git describe referenciaAUmCommit`: descreve onde você está em relação a âncora mais próxima. Saída do comando: `<tag>_<numCommits>_g<hash>` onde tag é a tag ancestral mais próxima no histórico, numCommits é o número de commits de distância da tag, e <hash> é o hash do commit sendo descrito.
 
+  - `Remotos no Git`:
+    - Repositórios remotos servem como um ótimo backup.
+    - Repositórios remotos tornam o desenvolvimento uma atividade social.
+      - `git clone`: criar cópias locais de repositório remotos
+
+    - `Ramos Remotos`:
+      - Ramos remotos refletem o estado de repositórios remotos (desde a última vez na qual você falou com eles). Eles ajudam a entender as diferenças entre o trabalho local e o trabalho atualmente público.
+      - Ramos remotos possuem a propriedade especial de, ao sofrerem um checkout, colocarem o repositório em modo "Detached HEAD", porque não podemos trabalhar nesses ramos diretamente. É obrigatório trabalhar em outro lugar e então compartilhar o trabalho com o ramo remoto, que depois disso será atualizado.
+      - Nomenclatura: `<nome do repositório remoto>/<nome do ramo>`
+
+    - `git fetch`: baixar dados de um repositório remoto para o local. Essencialmente faz com que nossa representação local do repositório remoto fique sincronizada com a forma com que o repositório remoto de fato se parece (naquele momento). Não mnuda nada do estado local do repositório: não atualiza o ramo main nem muda a forma como o sistema de arquivos está no momento, ele apenas baixa todos os arquivos necessários.
+      - `git fetch origin foo`: O Git vai ao ramo remoto foo e pega todos os commits que não estão presentes localmente, jogando-os no ramo local o/foo.
+      - `git fetch origin <origem>:<destino>`: Único jeito de fazer um commit diretamente em um ramo local (não no ramo remoto origin/ramo). <origem> é uma referência remota e <destino> é uma referência local de onde colocar esses commits. O destino pode não existir: ele será criado automático quando não for encontrado nenhuma branch com o nome do destino.
+      - `git fetch origin :<destino>`: cria novo ramo local.
+  
+    - `git pull`: executa o fetch e faz merge das mudanças remotas no repositório local.
+
+    - `git push`: subir as suas mudanças locais para um repositório remoto especificado, e atualizar esse remoto para incorporar seus novos commits. Atualiza a reflexão do ramo remoto localmente (coloca o ramo remoto no mesmo local que está remotamente).
+      - `git push nomeDoRepositorioRemoto lugarOndeEstaraoAsMudancas`: Vá ao ramo chamado "lugarOndeEstaraoAsMudancas" no meu repositório local, pegue todos os commits, então vá ao ramo "lugarOndeEstaraoAsMudancas" no repositório remoto chamado "nomeDoRepositorioRemoto". Coloque quaisquer commits que estiverem faltando nesse ramo, e então me diga quando estiver pronto. Especificando o parâmetro "lugarOndeEstaraoAsMudancas", dizemos ao Git de onde os commits vão vir e para onde os commits irão. É essencialmente o "lugar" onde sincronizar entre os dois repositórios.
+      - `git push origin <origem>:<destino>`: separamos o local de origem das mudanças no repositório local do local que receberá as mudanças no repositório remoto. <origem> é uma referência local e <destino> é uma referência remota de onde colocar esses commits. O destino pode não existir: ele será criado automático quando não for encontrado nenhuma branch com o nome do destino.
+      - `git push origin :<destino>`: exclui ramo remoto.
+
+    - `Histórico divergente`:
+      - Quando atualiza algo no repositório local e alguém atualiza o repositório remoto, portanto você trabalhou numa versão antiga do repositório remoto. O git não permite dar push das suas mudanças sem você antes ter atualizado seu repositório local para ficar igual ao remoto. Git push falha e nada acontece.
+      - `git fetch` (atualiza repositório local) + `git rebase` (mover código para o local apropriado na árvore) + `git push` (pushar para o git)
+      - `git fetch` + `git merge` (repositório remoto passa a ser ancestral do ramo local) + `git push`
+      - `git pull --rebase` (abreviação para fetch e rebase) + `git push`
+      - `git pull` (abreviação para fetch e merge) + `git push`
+
+    - `Remote Tracking`:
+      - O main remoto e o main local são conectados. O ramo main é configurado para seguir o ramo origin/main: isso significa que existe um alvo implícito de merge e um destino implícito de push para o ramo main.
+      - Podemos alterar a branch que está ligada ao origin/main:
+        - `git checkout -b nomeDaBranchQueQuerConectarComOMainRemoto origin/main`
+        - OU
+        - `git branch -u origin/main nomeDaBranchQueQuerConectarComOMainRemoto`
+
+
 
 ## MVN Repository
 
