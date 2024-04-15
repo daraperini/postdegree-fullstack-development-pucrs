@@ -35,6 +35,3 @@ Nesse repositório você encontra os códigos desenvolvidos em aula, além de um
 * Git
 * GitHub
 * Docker
-
-## Para instalar e rodar o arquivo *conversao-temperatura-2-main*
-usamos docker?
