@@ -1,4 +1,4 @@
-# Object-oriented Programming
+# Cloud Software Architecture
 
 This class had as goal to study the "Characteristics of cloud computing paradigm (self-service, elasticity, pay-as-you-go). Study of cloud computing models: SaaS, PaaS and IaaS. Analysis of the main public cloud providers (AWS, Google and Azure) and their services. Study on cloud-centric software architectures (Cloud-Native Architecture). Case study of claud computing applications. Challenges and trends in cloud computing."
 
