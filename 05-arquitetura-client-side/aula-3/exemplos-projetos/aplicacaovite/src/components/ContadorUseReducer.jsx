@@ -1,0 +1,40 @@
+import { useReducer } from "react";
+
+const reducer = (estado, acao) => {
+  switch (acao.type) {
+    case "incremento":
+      {
+        return { contagem: estado.contagem + acao.valor };
+      }
+    case "decremento":
+      {
+        return { contagem: estado.contagem - 1 };
+      }
+    default: {
+      throw new Error(`Tipo de ação desconhecida: ${acao.type}`);
+    }
+  }
+};
+
+const ContadorUseReducer = () => {
+    const estadoInicial = {contagem: 0};
+    const [estado, dispatch] = useReducer(reducer, estadoInicial);
+
+    const handleClickMais = () => {
+        dispatch({type: 'incremento', valor:2});
+    }
+
+    const handleClickMenos = () => {
+        dispatch({type: 'decremento'});
+    }
+
+    return (
+        <>
+            <button onClick={handleClickMais}>+</button>
+            <button onClick={handleClickMenos}>-</button>
+            <span>Contagem atual: {estado.contagem}</span>
+        </>
+    )
+}
+
+export default ContadorUseReducer;
