@@ -17,3 +17,14 @@
   - `Node Package Manager - NPM`: ferramenta do Node.js para o gerenciamento de pacotes. Auxilia na intalação e desinstalação de pacotes, gerenciamento de versões e de dependências dos projetos.
   - `Express`: framework para aplicativo da web do Node.js que implementa serviço HTTP de forma mínima e flexível 
   - `Browser - cliente` request <=> JSON <=> HTTP verbs <=> HTTP <=> response `Node.js - servidor`
+
+- `Postman`: para testagem de servidores back-end.
+  - Em HTTP conseguimos testar apenas o verbo GET no browser. Os outros precisam de uma ferramenta para serem testados -> Postman
+  - `Collections`: cada uma representa uma URL da API que deve ser testada. Pode criar quantas for necessário
+    - Criar um template pro projeto utilizando os templates disponíveis nas collections
+    - Dentro da pasta User testamos as requisições. Criar um exemplo para cada requisição.
+  - `Environments`: variáveis de ambiente. Conjunto de variáveis que podemos utilizar nas collections para fazer as testagens e ir alterando os ambientes de acordo com o necessário (as vezes estamos testando localmente, as vezes vamos testar fora do ambiente local).
+    - Criar novo environment com variáveis e seus valores
+    - Quando criar uma collectin setar o environment e utilizar as variáveis:
+      - http://{{local}}:{{port}}/users
+    - Depois podemos alterar as variáveis para fazer testagens em outros ambientes conforme necessário.

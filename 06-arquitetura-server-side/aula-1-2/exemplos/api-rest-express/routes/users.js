@@ -3,7 +3,13 @@ var router = express.Router();
 
 /* GET users lista. */
 router.get('/', function(req, res, next) {
-  res.send('Lista Usuários');
+  res.send('Lista todos Usuários');
+});
+
+/* GET users por id. */
+router.get('/:id', function(req, res, next) {
+  const id = req.params.id
+  res.send(`Lista Usuário de id = ${id} `);
 });
 
 /* POST user .*/
