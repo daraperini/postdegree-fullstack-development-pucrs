@@ -1,0 +1,29 @@
+<!-- Arquivo visual da homepage
+As tags <a/> não funcionam porque esse exemplo foi copiado de outro projeto. Como esse projeto foi estruturado de uma forma diferente não teria como chamar a rota diretamente na tag âncora.
+Exemplo puramente visual para lembrar como receber uma lista de dados e estruturá-los numa página HTML.
+
+Para fazer as tags <a/> funcionarem teríamos que desenvolver um front para cada <a/> e realizar os métodos pull, delete e post de forma a conectá-los com os botões de enviar de cada página.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postcard</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <h1>Postcards</h1>
+  <ul>
+    <% postcards.forEach (postcard => { %>
+        <li>
+          <strong><%= postcard.name %></strong> - <%= postcard.cidade %>, <%= postcard.pais %>
+          <a href="">Editar</a>
+          <a href="">Excluir</a>
+        </li>
+    <% }); %>
+    <a href="">Adicionar</a>
+  </ul>
+</body>
+</html>

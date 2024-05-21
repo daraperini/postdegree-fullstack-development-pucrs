@@ -1,0 +1,34 @@
+[
+  {
+    "id": "557e8498-8148-47ba-9028-d12782686617",
+    "name": "Torre Eiffel",
+    "cidade": "Paris",
+    "pais": "França",
+    "descricao": "A frágil e delicada torre de ferro será erguida apesar dos protestos. Os trabalhos duram 2 anos e se desenrolam em 3 etapas, uma vez as fundações construídas : a construção do primeiro andar, terminado em 1° de abril de 1888, a construção do segundo andar, terminado em 14 de agosto de 1888, e por fim, a montagem definitiva até o topo da torre em 31 de março de 1889, quando o monumento é inaugurado. Gustave Eiffel sobe os 1710 degraus da torre, que nesta época tinha 312 metros de altura, para colocar no seu topo a bandeira tricolor.",
+    "imageUrl": "https://cdn.pariscityvision.com/library/image/5144.jpg"
+  },
+  {
+    "id": "d27f3124-6eb1-4b19-a6c1-2e950969383d",
+    "name": "PUCRS",
+    "cidade": "Porto Alegre",
+    "pais": "Brasil",
+    "descricao": " Campus da PUCRS em Porto Alegre",
+    "imageUrl": "https://comung.org.br/wp-content/uploads/2020/11/PUCRS-1-scaled.jpg"
+  },
+  {
+    "id": "9e235355-4c05-4812-a3de-8ffe56c530a6",
+    "name": "PUCRS",
+    "cidade": "Porto Alegre",
+    "pais": "Brasil",
+    "descricao": " Campus da PUCRS em Porto Alegre",
+    "imageUrl": "https://comung.org.br/wp-content/uploads/2020/11/PUCRS-1-scaled.jpg"
+  },
+  {
+    "id": "c8b026f7-7ae9-48a0-9b3f-a2ce1b87e1d3",
+    "name": "TECNOPUC",
+    "cidade": "POA",
+    "pais": "Brasil",
+    "descricao": "Polo tecnológico",
+    "imageUrl": "www.pucrs.br"
+  }
+]
