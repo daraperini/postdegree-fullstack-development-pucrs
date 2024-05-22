@@ -4,9 +4,10 @@
 
 
 - `MVC - Model View Controller`: separar em 3 grupos: dados (model), apresentação (view) e lógica de negócios (controller).
-  - Model = operações e gerenciamento de dados / banco de dados
+  - Model = operações e gerenciamento de dados / banco de dados. Armazenamento, recuperação e manipulação dos dados.
   - View = apresentação e interface de dados visíveis aos usuários
-  - Controller = cérebro. Possui as regras e lógicas de negócios, processamento, funcionalidades...
+  - Controller = cérebro da aplicação. Possui as regras e lógicas de negócios, processamento, funcionalidades... Coordena a interação entre model e view.
+    - Utilizaa os models para obter dados, processa os dados e os disponibiliza para o view.
 
 - `Estruturando um projeto MVC`: 
   - Separar o arquivo em pastas:
@@ -22,6 +23,8 @@
   - Node: por padrão é assíncrono. Vai resolvendo a aplicação enquanto outras coisas ainda não foram resolvidas.
 
 - `Programação reativa`: paradigma de programação. Se concentra na criação de sistemas e aplicativos que respondem automaticamente a mudanças de estado e eventos. Útil para desenvolver aplicativos em tempo real, como aplicativos da web que exigem atualizações em tempo real com base em ações do usuário ou em eventos de sistema.
+
+- `Rest - Representational State Transfer`: estilo arquitetural que define um conjunto de restrições a serem usadas para a criação de web services. Permite processar requisições HTTP através de verbos (get, post, pull...)
 
 - `Node.js`: framework server-side baseado em JavaScript. Interpretador JS do lado do servidor. Facilmente escalável; usa modelo de I/O (acesso ao hd) direcionada a evento não bloqueante (que não bloqueia a informação para outra pessoa pegar enquanto node está utilizando), sendo mais leve e eficiente; ideal para aplicações em tempo real com troca intensa de dados através de dispositivos distribuídos (celulares).
   - `Node Package Manager - NPM`: ferramenta do Node.js para o gerenciamento de pacotes. Auxilia na intalação e desinstalação de pacotes, gerenciamento de versões e de dependências dos projetos.
