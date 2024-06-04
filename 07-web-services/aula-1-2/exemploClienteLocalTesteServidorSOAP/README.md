@@ -1,0 +1,1 @@
+- Cliente desenvolvido para testagem do web service criado em `exemploServerSOAP`
