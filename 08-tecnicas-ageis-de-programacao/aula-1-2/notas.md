@@ -146,4 +146,15 @@
       - Monta cenário de teste sem o comportamento existir. Rodar o cenário, que falha.
       - Mexer no comportamento do código. Rodar o teste, que deve passar.
       - A partir do teste ter passado, podemos modificar a estrutura do código, mexer em nome de variável etc. Caso alguma mudança quebre o teste, rever.
-  - 
+
+- `Dívida Técnica`:
+  - Metáfora que diz que quando precisamos tomar uma decisão a cerca do projeto, teremos uma dívida que deverá ser paga.
+  - A cada nova featura / manutenção, inserimos coisas que podem ter efeitos colaterais no código => "sujeira" (dívida técnica)
+    - Se não cuidarmos da sujeira, ela se acumula e para fazer a limpeza fica muito mais difícil
+  - Dívida técnica baixa a moral e motivação do time, baixa a qualidade do código e enderaça uma baixa produtividade
+
+- `Refatoração`:
+  - Processo complexo
+  - Está relacionada a uma mudança de estrutura interna do código com o comportamento se mantendo estável
+  - Entender onde estão as oportunidades de refatoração
+  - Os testes continuam passando após a refatoração

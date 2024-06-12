@@ -1,3 +1,5 @@
+// Exemplo de TDD - Test Driven Development, utilizando métodos de criação de testes passados na aula
+
 const ContaBancariaNossoBanco = require("../src/ContaBancariaNossoBanco");
 
 describe("comportamento da ContaBancariaNossoBanco.jsx", () => {
