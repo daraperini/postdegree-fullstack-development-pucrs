@@ -158,3 +158,30 @@
   - Está relacionada a uma mudança de estrutura interna do código com o comportamento se mantendo estável
   - Entender onde estão as oportunidades de refatoração
   - Os testes continuam passando após a refatoração
+
+- `Análise de código`:
+  - Habilidades necessárias:
+    - Heurísticas de análise: princípios, técnicas
+    - Compreender qualidade de software
+    - Aplicar métricas de análise e estratégias de visualização e ferramentas de apoio
+    - Estratégias
+      - Análise Estática: Quando estamos trabalhando em cima do código fonte ou do binário. Para identificar métricas.
+      - Análise Dinâmica: Utilizada para entender como os objetos se comunicam. O software precisa estar em funcionamento.
+      - Análise Histórica: Análise do repositório: crescimento, commits, usuários...
+      - Análise Comportamental: Análise da equipe, seu conhecimento...
+  - Pilares da análise:
+    - Coesão
+    - Acoplamento
+    - Tamanho 
+    - Complexidade
+  - Essência:
+    - Estruturas pequenas
+    - Nomes significativos
+    - Formatação e uso de padrões
+    - Organização das estruturas e algoritmos
+    - Aplicação dos princípios do paradigma
+    - Testes automatizados
+  - Ter um objetivo para a análise e utilizar ferramentas que ajudem a encontrar o ponto que deseja
+  - Pode começar de baixo para cima, de dentro para fora do código
+  - As análises devem ser feitas sempre, de forma antecipada, antes de dar problema
+  - Individualmente, em par ou em sessões de Code Review
