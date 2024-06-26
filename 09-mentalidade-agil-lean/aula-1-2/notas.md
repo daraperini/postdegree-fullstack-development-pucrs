@@ -1,0 +1,219 @@
+# Mentalidade Ágil - LEAN
+
+- eficiência com qualidade de produtos
+- foco em atividades com valor agregado para o cliente
+- redução de custos
+- eficiência:
+  - diminuição de atividades
+  - automatização
+  - maior introsamento entre equipes
+
+- `LEAN Agile`: lean + manifesto ágil
+  - Entregar valor percebido ao cliente
+  - Melhorar continuamente
+  - Dar autonomia de gerência para as equipes
+
+- `Pilares do LEAN`:
+  - Melhoria contínua
+  - Repeito pelas pessoas
+  - Liderança
+  - Entregas de valor
+
+- `Princípios do LEAN`:
+  - `Valor`:
+    - Entregar valor para quem recebe o produto
+    - Entender empaticamente o que é o valor percebido
+    - Direcionar esforços para entrega do valor
+    - Procura do que não trás valor ao cliente e remover
+    - Entender a causa-raiz dos problemas identificados para fazer correções de alto valor
+  - `Fluxo de valor`:
+    - Após identificar o que o valor significa pro cliente, definir como atender a essa expectativa
+    - Identificar processos e etapas
+    - Mapear o Fluxo de Valor
+    - Trabalhar para eliminar desperdícios
+  - `Fluidez`:
+    - Estabelecer um fluxo em que o trabalho não é impedido ou bloqueado, para que o processo flua suavemente em direção ao cliente
+    - Avaliar mudanças na estrutura organizacional
+    - Corrigir individualismo e pensamento de grupo
+    - Formar equipes multi disciplinares de acordo com a entrega
+    - Repensar o layout do ambiente organizacional
+  - `Pull`:
+    - Pessoas começam a puxar o trabalho ao invés de serem atoladas por ele, devido a eliminação do desperdício e aumento da fluidez
+    - Monitorar gargalos no fluxo de valor (task waiting time, estoques elevados)
+    - Praticar gestão visual do trabalho
+    - Atuar imediatamente nos eventuais problemas de fluidez identificados 
+    - Garantir a produção de apenas o necessário, na quantidade necessária
+  - `Perfeição`:
+    - Melhorar continuamente
+    - Definir objetivos grandiosos
+    - Corresponsabilizar todos os integrantes do fluxo de valor pelo sucesso ou fracasso da entrega
+
+- `Quando utilizar Ágil ou LEAN?` Quando tem começo, meio e fim, os métodos ágeis dão mais insights. Uma operação, com entregas mais frequentes, pode ser mais beneficiada pelo LEAN.
+
+- `Pensamento Ágil`:
+  - Mentalidade é um conjunto de comportamentos que nos ajudam a aceitar ou adotar normas culturais
+  - Hábitos novos se transformam em comportamentos com o tempo -> cultura da agilidade
+  - Aferição:
+    - Grau de atenção dedicada à satisfação dos stakeholders
+      - Envolver stakeholders decisores
+      - Estabelecer uma visão compartilhada de valor
+      - Compartilhar os critérios de sucesso
+      - Permitir o feedback dos stakeholders
+    - Grau de engajamento dos profissionais
+      - Desenvolver regras do jogo de maneira colaborativa
+      - Descobrir motivadores individuais e de equipes
+      - Priorizar o trabalho de maneira colaborativa
+      - Preparar os profissionais para solução de problemas
+      - Praticar liderança servidora - líder que participa e ajuda na resolução de problemas
+      - Co-alocar ou prover ferramentas de colaboração
+      - Contruir o contrato social
+      - Reduzir distrações
+      - Encorajar e medir colaboração
+      - Promover e monitorar compartilhamento de conhecimento
+      - Manter a lista de riscos visível, monitorada e priorizada
+      - Manter as informações amplamente visíveis
+    - Grau de simplificação de tudo
+      - Definir e entregar produtos e serviços incrementalmente
+      - Refinar estimativas na medida em que a compreensão aumenta
+      - Repriorizar conforme as condições se alteram
+      - Adaptar planos a fim de refletir quaisquer mudanças
+      - Conduzir retrospectivas frequentes
+      - Adaptar o projeto e os processos da equipe 
+
+- `Pensamento Sistêmico`:
+  - Um sistema deve ser gerenciado. Ele não deve gerenciar a si mesmo
+  - Aspectos Primários:
+    - Entender que a solução é um sistema
+    - Entender que a empresa que constrói a solução é um sistema 
+    - Entender e otimizar todo o fluxo de valor do desenvolvimento 
+
+- `Comportamento Ágil`:
+  - 3 grupos de comportamentos:
+    -  Proatividade
+       -  Antecipação de problemas decorrentes das mudanças constantes
+       -  Solução dos problemas identificados até o limite da autonomia
+       -  Iniciativa pessoal, inclusive no desenvolvimento da autonomia
+    -  Adaptabilidade
+       -  Adaptabilidade cultural e pessoal
+       -  Colaboração espontânea
+       -  Aprendizagem constante e busca por novas responsabilidades
+       -  Flexibilidade profissional (cotidiano e carreira)
+    -  Resiliência
+       -  Atitude positiva em relação a mudanças, novas ideias e novas tecnologias
+       -  Tolerância às incertezas e às situações inesperadas
+       -  Capacidade de lidar com o stress e com ambientes estressantes
+
+- `Cofiguração das Organizações Ágeis`:
+  - Organização em 4 topologias de equipes:
+    - `Stream-aligned`: Organizada em torno do fluxo de trabalho, entrega valor diretamente ao cliente. Trabalham com as entregas efetivamente.
+    - `Complicated Subsystem`: Organizada em torno de subsistemas específicos, exige especialização. Suporte às stream-aligneds com skills específicas.
+    - `Platform`: Organizada em torno do desenvolvimento e suporte de plataformas que servem outras equipes. Organizam tudo que é necessário para que as equipes acima possam fazer seu trabalho.
+    - `Enablement`: Cuidam do desenvolvimento das habilidades necessárias para que a empresa funcione, e novas habilidades.
+  - Configuradas em relação ao seu escopo direto de atuação:
+    - `Solution Trains`: visão ampla, num nível estratégico, do que será entregue
+    - `Agile Release Trains`: conjunto estável de equipes ágeis que desenvolve, entrega e opera de forma incremental na solução de um fluxo de valor
+
+- `Práticas Lean-Agile das Equipes`:
+  - Trabalhar em iterações curtas
+  - Quebrar o trabalho em pequenas user stories, gerenciadas no backlog da equipe
+    - Alguém que precisa da entrega
+    - Problema de negócio
+    - Qual o benefício da entrega e o prejuízo da não entrega
+  - Planejar em conjunto o trabalho da próxima iteração
+  - Comunicar e aferir progresso nas daily standups
+  - Apresentar soluções funcionais continuamente, ou ao final das iterações
+  - Discutir como melhorar o processo para a próxima iteração
+
+- `Práticas Lean-Agile das Equipes de Equipes`:
+  - Alinhar o portfolio com foco na estratégia
+  - Embutir qualidade aos processos e às entregas, evitando retrabalho e atrasos
+  - Manter o trabalho fluído através da avaliação objetiva dos sistemas de execução
+  - Executar e revisar o trabalho em pares, aperfeiçoando-o através das perspectivas ddistintas
+  - Reduzir dependências através de ownership compartilhada, e estabelecer padrões altos
+  - Automatizar processos e verificações de qualidade, protegendo os altos padrões
+  - Discutir e definir a Definição de Pronto
+    - Revisão do trabalho
+    - Resultado dos testes automatizados
+    - Conclusão da documentação
+
+- `Produto Mínimo Viável - MVP`:
+  - O mínimo que precisamos entregar para aprender com o cliente sobre o nosso produto
+  - Armadilhas comuns:
+    - Entregar sem aprender com as reações à entrega
+    - Pensar somente em monetizar, perdendo o foco na aprendizagem
+    - Dar mais atenção ao "mínimo", do que ao "viável" para o cliente; deve haver equilíbrio
+    - Manter produtos que deveriam ser descontinuados (apego ao investimento)
+    - Ignorar os feedbacks dos usuários
+    - Apegar-se demais a hipótese
+
+- `Melhoria Contínua - Kaizen`:
+  - 3 tipos de desperdício:
+    - Muda: 7 principais desperdícios
+    - Mura: desequilíbrio no fluxo de valor
+    - Muri: ao invés de pull, usar push
+  - PDCA: plan, do, check, act
+    - Planejar melhorias
+    - Fazer melhorias
+    - Avaliar melhorias
+    - Age em cima dos insights da avaliação
+  - RCA: Root Cause Analysis:
+    - identifica a causa raiz dos problemas identificados
+
+- `Just in time e Kanban`:
+  - Associadas à fluidez do trabalho
+  - Sistema pull precisa estar implementado para o Just In Time acontecer corretamente
+  - Sincronizar o trabalho com o que é feito um pouco antes e um pouco depois
+  - Deixar o trabalho disponível na hora certa
+  - 3 práticas fundamentais Just in Time:
+    - `Takt time`: frequencia em que uma parte do trabalho é produzida para atender demandas específicas
+    - `Continuous Flow`: produzir e mover um item de cada vez para cumprir o Takt Time, evitando gargalos
+    - `Pull System`: permitir que o cliente ou a próxima etapa do processo puxem apenas entregas necessárias de acordo com a cadência combinada
+  - Práticas do Kanban:
+    - Visualização do fluxo de trabalho
+    - Eliminação das interrupções
+    - Gerenciamento do ritmo
+    - Publicação de regras e processos
+    - Adoçãoo de ciclos de feedback constantes
+    - Colaboração para melhoria entre indivíduos
+
+- `Gestão visual`:
+  - Modelo de comunicação mais eficiente que utiliza recursos visuais
+  - Diminui ruídos de comunicação e necessidade de interpretação das informações
+  - Torna o profissional um visual thinker
+  - Alinha equipes em torno de objetivos compartilhados
+  - Acelera a identificação e resolução dos problemas
+  - Aumenta o engajamento dos profissionais com o trabalho e entre si
+  - Permite a próatividade e autonomia
+  - Failita a comunicação
+  - `Andon`: sinal que serve para sinalizar problemas
+    - Aumenta a transparência, gerando impacto positivo na eficiência
+    - Reduz defeitos e interrupções
+    - Aumenta a qualidade das entregas
+    - Fortalece a autonomia das equipes
+    - Incentiva a rapidez na solução do problema
+    - Fomenta o hábito de priorizar a melhoria contínua
+
+- `Last Planner System (LPS)`:
+  - Ferramenta lean aplicada no setor de construção civil
+  - Planejamento em alto nível para identificação dos principais milestones das entregas
+  - Planejamento detalhado de cada milestone, usando Pull
+  - Reuniões semanais para revisão do planejamento de curto prazo e identificação de restrições
+
+- `Produto e Resultado Enxuto`:
+  - Construir soluções mais rapidamente, com menos desperdícios
+  - 5 princípios:
+    - Entrega de valor para o cliente
+    - Identificare o Fluxo de Valor e reduzir desperdícios
+    - Simplificar etapas de criação de valor
+    - Empoderar equipes
+    - Aprender e melhorar
+  - Continuous Delivery Pipeline:
+    - Exploração
+      - Definição da entrega e conversão para MVPs
+    - Integração
+      - Refinar ideias para passar para a produção
+      - Avaliar o que se conecta com o produto final
+    - Deploy
+      - Tudo que foi validado pela integração é entregue
+  - Release on demand: Capaciodade de disponibilizar valor para os clientes de uma só vez, ou de forma escalonada, com base na necessidade do negócio
+
