@@ -137,3 +137,68 @@
   - Entender o propósito da solução
   - Estabelecer o que será feito em cada etapa do desenvolvimento (concepção, design, implementação)
   - Se for processo ágil, muda a cada Sprint
+
+## Projetos Ágeis
+
+- QA deve atuar de maneira direta
+- Rastreio de defeitos e reteste expecífico desses defeitos
+
+## Perfis
+
+- `Testador x SDET`:
+  - `SDET`: 
+    - software development engineer in test
+    - Profissional com conhecimento em desenvolvimento de software e de testes
+    - Não é necessariamente especializado em testes
+    - Pode auxiliar nos processos dependendo da demanda
+    - Trabalha com desenvolvimento para testes
+
+## KPIs
+
+- Key Performance Indicator: indicadores de performance
+- Leva em conta:
+  - Satisfação do cliente
+  - Processo interno de qualidade
+  - Satisfação do funcionário
+  - Índice de performance financeira
+- São escolhidas de acordo com as necessidades específica do software
+- Quanto mais métricas, mais difícil fica de avaliar
+
+- `Nível de Testes unitários`:
+  - Correlação entre quantidade de linhas de código adicionadas/modificadas por um período de tempo
+  - Número de defeitos a cada 1000 linhas de código (KLoC)
+  - % de cobertura do código
+- `Nível de Testes de integração`:
+  - Defeitos por componentes
+  - Componentes mais alterados x defeitos achados (verifica efetividade dos testes)
+- `Nível de Sistema`:
+  - Quantidade de defeitos achados por tempo (por prioridade) - probabilidade de frequência x impacto ao usuário
+  - Quantidade de defeitos resolvidos por tempo
+  - Idade dos defeitos por prioridade
+
+## Testes A/B
+
+- Comparam 2 versões da solução (uma modificação, uma nova feature...) que será utilizada pelo usuário para identificar qual versão é mais atrativa para o cliente.
+  - Alguns usuários recebem a versão A, outros a versão B
+  - Risco controlado 
+- Avaliar:
+  - tráfego gerado
+  - quantos usuários completaram a ação
+  - quantos usuários completaram a ação dentro do tempo esperado
+  - qual foi o potencial para engajamento
+
+1. Estabelecer Baseline
+2. Determinar um objeto baseado na Baseline (o que quer modificar?)
+3. Desenvolver uma hipótese que irá alavancar a performance do objeto
+4. Identificar alvos para teste
+5. Criar versões A (nova versão 1 || versão corrente) e B (nova versão 2 || nova versão)
+6. Utilizar ferramentas de automação de testes (versões A e B sempre precisam estar funcionando corretamente)
+7. Executar e validar os resultados do teste com uso de ferramentas analíticas que permitem "acompanhar" a movimentação do usuário dentro do site
+8. Aplicar o conhecimento na melhoria da experiência
+
+- `Ferramentas de análise`:
+  - Permitem avaliar testes A/B de acordo com:
+    - Tráfego: visualização das páginas, visitantes únicos
+    - Engajamento: tempo decorrido, número de página por visita, fuga
+    - Conversões: número de clicks, registros, cadastros
+    - Tendência de performance ao longo do tempo
