@@ -284,8 +284,11 @@
 
 ## Usabilidade, Comunicabilidade e Acessibilidade
 
+- `Usabilidade`: 10 heurísticas de nielsen.
+
 - `Acessibilidade`: fornecer na interface itens que podem ser utilizados por todas as pessoas.
   - W3C - normas técnicas
 
-- `Comunicabilidade`: efetivamente comunicar ao usuário a intenção do designer. Utilizar a interface como um refletor das intenções do designer.
+- `Comunicabilidade`: efetivamente comunicar ao usuário a intenção do designer. Utilizar a interface como um refletor das intenções do designer. Disposição de cada ícone representa o modelo mental que o designer exerceu sobre determinado contexto.
+  - Engenharia simiótica explica que tudo possui associações mentais que dão significado às coisas e construir interfaces é dar significados a botões e símbolos.
 
