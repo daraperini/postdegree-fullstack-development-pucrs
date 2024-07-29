@@ -8,7 +8,7 @@
 
 - `Estilos de interações`:
   - Linguagem de comando
-  - WIMPO ou GUI
+  - WIMP ou GUI
   - Linguagem natural (pesquisa no google, alexa...)
   - Menus
   - Formulários
