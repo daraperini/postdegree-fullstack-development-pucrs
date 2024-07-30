@@ -39,3 +39,26 @@
     - Princípios:
       - `Descobertabilidade:` devemos conseguir entender como a porta funciona assim que olhar para ela
       - `Feedback`
+
+- `Textos e mensagens`:
+  - Infos importantes não podem ficar em banners isolados do conteúdo principal -> as pessoas não olham fora do conteúdo principal
+  - Pra algo ser visto, deve ter pouca informação ao redor
+  - Utilizar tópicos e conteúdo textual condensado -> melhora usabilidade
+  - Linguagem fácil de entender
+  - Nomenclatura simples e conhecida
+  - Padronizar palavras
+  - Somente língua culta padrão (acentos, pontuação)
+  - Revisar antes de publicar
+  - Não usar exclamação, caixa alta...
+
+- `Usabilidade para plataformas móveis`: 
+  - Design responsivo é limitado
+  - Telas muito pequenas
+  - Atenção compartilhada
+  - Touch - gesture, swipe, pull to refresh
+  - Sem mouse
+  - Sem teclado físico
+  - Sem separação clara entre software e hardware
+
+- `Affordance`: qualidade que um objeto tem de ser olhado e reconhecido imediatamente
+- `Constraints`: impedir ações para não gerar situações de erro. Não deixar o usuário prosseguir quando ele não deve seguir em frente.
