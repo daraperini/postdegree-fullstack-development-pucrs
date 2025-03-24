@@ -1,4 +1,4 @@
-# Server-Side Architecture
+# Web Services
 
 This class had as goal to "Study the concepts of monolithic architecture. Review SOAP, REST, GraphQL concepts and service descriptors. Study serveless solutions. Building solutions with REST and GraphQL frameworks."
 
@@ -17,7 +17,7 @@ During the class we reviewed concepts such as LAN, MAN and WAN, TCP/IP, WWW, HTT
 #
 
 
-# Arquitetura Server-Side
+# Web Services
 
 Essa disciplina teve como objetivo o "Estudo sobre conceitos de arquitetura monolítica. Revisão dos conceitos sobre SOAP, REST, GraphQL e descritores de serviços. Estudo sobre soluções serveless. Construção de soluções com framework REST e framework GraphQL."
 
